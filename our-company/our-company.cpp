@@ -40,7 +40,7 @@ public:
     }
 
     void remove(const string& text) {
-        items.erase(remove_if(items.begin(), items.end(),
+        items.erase(remove_if(items.begin(), items.end(),//
             [&](Publication* p) { return p->getName() == text; }), items.end());
     }
 };
